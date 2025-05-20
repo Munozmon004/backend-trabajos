@@ -5,7 +5,7 @@
 Proyecto para la asignación de WebSockets que muestra dos vistas de productos:
 
 - `/` - Vista visual con Handlebars que muestra la lista de productos al momento de cargar la pagina.
-- `/realtimeproducts` - Vista que se actualiza en tiempo real mediante WebSockets. Permite agregar y eliminar productos desde la misma página sin recargar.
+- `/realtimeproducts` - Vista que se actualiza en tiempo real mediante WebSockets. Permite agregar y eliminar productos desde la misma pagina sin recargar.
 
 
 ## Librerias usadas
@@ -14,6 +14,6 @@ Proyecto para la asignación de WebSockets que muestra dos vistas de productos:
 - Express
 - express-handlebars
 - Socket.io
-- Nodemon (para correrlo y ver el proseso)
+- Nodemon 
 
 # Estudiante Monse Munoz. 
