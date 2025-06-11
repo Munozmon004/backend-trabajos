@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Productos</h1>
+
+ <ul>
+  {{#each products}}
+    <li>
+      <strong>{{this.title}}</strong> - ${{this.price}} <br>
+      {{this.description}}
+    </li>
+  {{/each}}
+</ul>
+
+<div>
+  {{#if pagination.hasPrevPage}}
+    <a href="/products?page={{pagination.prevPage}}">⬅ Pagina anterior</a>
+  {{/if}}
+
+  <span>Pagina {{pagination.page}} de {{pagination.totalPages}}</span>
+
+  {{#if pagination.hasNextPage}}
+    <a href="/products?page={{pagination.nextPage}}">Pagina siguiente ➡</a>
+  {{/if}}
+ </div>
+</body>
+</html>
